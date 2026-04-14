@@ -10,7 +10,7 @@ body {
 
 .container {
     text-align: center;
-    padding: 80px 20px;
+    padding: 10px 10px;
 }
 
 
@@ -119,10 +119,11 @@ select {
   font-size: 15px;
   padding: 3px;
   font-style: italic;
-
 }
-
-.point li{
+  .point li  {
     list-style:none;
     text-align:center;
-}
+  }
+
+
+
