@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Recommendation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Crop Recommendation 🌿</h1>
+
+    <p>Enter your soil and weather details:</p>
+
+    <form action="/recommend" method="POST">
+
+        <select name="soil" required>
+    <option value="">Select Soil Type</option>
+    <option value="0">Alluvial</option>
+    <option value="1">Black</option>
+    <option value="2">Red</option>
+    <option value="3">Laterite</option>
+</select>
+
+        <input type="number" name="temperature" placeholder="Temperature (°C)" required>
+        <input type="number" name="humidity" placeholder="Humidity (%)" required>
+        <input type="number" name="rainfall" placeholder="Rainfall (mm)" required>
+
+        <button type="submit">Predict</button>
+
+    </form>
+
+    {% if result %}
+    <h2>Recommended Crop: {{ result }}</h2>
+    {% endif %}
+
+    <p>(Result will appear here after backend connection)</p>
+
+    <a href="index.html"><button>Back</button></a>
+
+</body>
+
+</html>
