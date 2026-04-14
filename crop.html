@@ -14,26 +14,72 @@
 
         <div class="card">
             <h3>Rice</h3>
-            <img src="Rice.jpg" alt="rice image">
-            <p>Requires high rainfall and warm climate.</p>
+            <div class="flip-card" onclick="flipCard(this)">
+    <div class="flip-card-inner">
+
+      <div class="flip-card-front">
+        <img src="Rice.jpg" alt="Image">
+      </div>
+
+      <div class="flip-card-back">
+        
+        <p>Requires high rainfall and warm climate.</p>
+      </div>
+    </div>
+  </div>
+        
         </div>
 
         <div class="card">
             <h3>Wheat</h3>
-            <img src="Wheat.jpg" alt="wheat image">
-            <p>Grows best in cool climate with moderate rainfall.</p>
+            <div class="flip-card" onclick="flipCard(this)">
+    <div class="flip-card-inner">
+
+      <div class="flip-card-front">
+        <img src="Wheat.jpg" alt="Image">
+      </div>
+
+      <div class="flip-card-back">
+      <p>Grows best in cool climate with moderate rainfall.</p>
+      </div>
+    </div>
+  </div>
+            
         </div>
 
         <div class="card">
             <h3>Maize</h3>
-            <img src="maize.jpg" alt="maize image">
-            <p>Needs well-drained soil and warm weather.</p>
+            <div class="flip-card" onclick="flipCard(this)">
+    <div class="flip-card-inner">
+
+      <div class="flip-card-front">
+        <img src="maize.jpg" alt="Image">
+      </div>
+
+      <div class="flip-card-back">
+        <p>Needs well-drained soil and warm weather.</p>
+      </div>
+    </div>
+  </div>
+           
         </div>
 
         <div class="card">
             <h3>Cotton</h3>
-            <img src="cotton.jpg" alt="cotton image">
-            <p>Requires black soil and high temperature.</p>
+
+             <div class="flip-card" onclick="flipCard(this)">
+    <div class="flip-card-inner">
+
+      <div class="flip-card-front">
+        <img src="cotton.jpg" alt="Image">
+      </div>
+
+      <div class="flip-card-back">
+      <p>Requires black soil and high temperature.</p>
+      </div>
+    </div>
+  </div>
+            
         </div>
 
         <!-- 👇 EXTRA CONTENT -->
@@ -52,12 +98,16 @@
         <h2>🚜 Modern Farming</h2>
         <p>Use of AI and technology helps farmers improve crop production and reduce loss.</p>
 
-        <h2>📌 Conclusion</h2>
-        <p>Choosing the right crop based on environment increases profit and reduces risk.</p>
+        
 
         <a href="/"><button>Back</button></a>
 
     </div>
+    <script>
+    function flipCard(card) {
+      card.classList.toggle("flipped");
+    }
+  </script>
 
 </body>
 
