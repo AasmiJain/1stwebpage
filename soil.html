@@ -12,133 +12,111 @@
 
         <h1>🌱 Soil Types</h1>
 
-        <div class="flip-card">
-            <div class="flip-card-inner">
+        <div class="cards-container">
 
-                <div class="flip-card-front">
-                    <h3>Alluvial Soil</h3>
-                    <img src="{{ url_for('static', filename='images/alluvial.jpg') }}">
+            <!-- Alluvial -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>Alluvial</h3>
+                        <img src="{{ url_for('static', filename='images/alluvial.jpg') }}">
+                    </div>
+                    <div class="flip-card-back">
+                        <ul class="List">
+                            <li>Very fertile</li>
+                            <li>Near rivers</li>
+                            <li>Crops: Rice, wheat</li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="flip-card-back">
-                    <ul class="List">
-                        <li>Colour: Light grey</li>
-                        <li>Fertility: High</li>
-                        <li>Found near rivers</li>
-                        <li>Crops: Rice, wheat</li>
-                    </ul>
-                </div>
-
             </div>
-        </div>
 
-        <div class="flip-card">
-            <div class="flip-card-inner">
-
-                <div class="flip-card-front">
-                    <h3>Black Soil</h3>
-                    <img src="{{ url_for('static', filename='images/black.jpg') }}">
+            <!-- Black -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>Black</h3>
+                        <img src="{{ url_for('static', filename='images/black.jpg') }}">
+                    </div>
+                    <div class="flip-card-back">
+                        <ul class="List">
+                            <li>Holds moisture</li>
+                            <li>Rich minerals</li>
+                            <li>Cotton best</li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="flip-card-back">
-                    <ul class="List">
-                        <li>Colour: Black</li>
-                        <li>Fertility: High</li>
-                        <li>Holds moisture</li>
-                        <li>Crops: Cotton</li>
-                    </ul>
-                </div>
-
             </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
 
-                <div class="flip-card-front">
-                    <h3>Red Soil</h3>
-                    <img src="{{ url_for('static', filename='images/red.jpg') }}">
+            <!-- Red -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>Red</h3>
+                        <img src="{{ url_for('static', filename='images/red.jpg') }}">
+                    </div>
+                    <div class="flip-card-back">
+                        <ul class="List">
+                            <li>Iron rich</li>
+                            <li>Low fertility</li>
+                            <li>Pulses grow</li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="flip-card-back">
-                    <ul class="List">
-                        <li>Colour: Red (iron rich)</li>
-                        <li>Fertility: Low to medium</li>
-                        <li>Found in: South India</li>
-                        <li>Crops: Millets, pulses</li>
-                    </ul>
-                </div>
-
             </div>
-        </div>
 
-
-        <div class="flip-card">
-            <div class="flip-card-inner">
-
-                <div class="flip-card-front">
-                    <h3>Laterite Soil</h3>
-                    <img src="{{ url_for('static', filename='images/laterite.jpg') }}">
+            <!-- Laterite -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>Laterite</h3>
+                        <img src="{{ url_for('static', filename='images/laterite.jpg') }}">
+                    </div>
+                    <div class="flip-card-back">
+                        <ul class="List">
+                            <li>Low fertility</li>
+                            <li>Rainy regions</li>
+                            <li>Tea, coffee</li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="flip-card-back">
-                    <ul class="List">
-                        <li>Colour: Red-brown</li>
-                        <li>Fertility: Low</li>
-                        <li>Found in: Kerala, Odisha</li>
-                        <li>Crops: Tea, coffee</li>
-                    </ul>
-                </div>
-
             </div>
-        </div>
 
-
-        <div class="flip-card">
-            <div class="flip-card-inner">
-
-                <div class="flip-card-front">
-                    <h3>Desert Soil</h3>
-                    <img src="{{ url_for('static', filename='images/desert.jpg') }}">
+            <!-- Desert -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>Desert</h3>
+                        <img src="{{ url_for('static', filename='images/desert.jpg') }}">
+                    </div>
+                    <div class="flip-card-back">
+                        <ul class="List">
+                            <li>Sandy soil</li>
+                            <li>Low fertility</li>
+                            <li>Bajra crops</li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="flip-card-back">
-                    <ul class="List">
-                        <li>Colour: Sandy</li>
-                        <li>Fertility: Low</li>
-                        <li>Found in: Rajasthan</li>
-                        <li>Crops: Bajra, barley</li>
-                    </ul>
-                </div>
-
             </div>
-        </div>
 
-
-        <div class="flip-card">
-            <div class="flip-card-inner">
-
-                <div class="flip-card-front">
-                    <h3>Mountain Soil</h3>
-                    <img src="{{ url_for('static', filename='images/mountain.jpg') }}">
+            <!-- Mountain -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>Mountain</h3>
+                        <img src="{{ url_for('static', filename='images/mountain.jpg') }}">
+                    </div>
+                    <div class="flip-card-back">
+                        <ul class="List">
+                            <li>Humus rich</li>
+                            <li>Cool regions</li>
+                            <li>Fruits, tea</li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="flip-card-back">
-                    <ul class="List">
-                        <li>Colour: Brown</li>
-                        <li>Fertility: Medium</li>
-                        <li>Found in: Himalayas</li>
-                        <li>Crops: Fruits, tea</li>
-                    </ul>
-                </div>
-
             </div>
+
         </div>
-
-
-
-
-
-
         <!-- 👇 EXTRA CONTENT FOR SCROLL -->
 
         <h2>🌾 Soil Nutrients Importance</h2>
@@ -167,10 +145,8 @@
 </body>
 
 </html>
-
+                        
+           
+                       
 
         
-        
-
-        
-
