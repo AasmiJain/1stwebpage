@@ -69,12 +69,18 @@ button:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.card img {
-    width: 250px;
-    height: 200px;
+.cards-container img {
+    width: 200px;
+    height: 100px;
     object-fit: cover;
     border-radius: 10px;
 }
+
+.box img{
+    width:250px;
+    height:200px;
+}
+
 
 
 /* Inputs */
@@ -118,6 +124,10 @@ select {
     font-size: 15px;
     padding: 3px;
     font-style: italic;
+}
+.point li{
+    text-align:center;
+    list-style:none;
 }
 
 
@@ -280,6 +290,13 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     justify-items: center;
+}
+.box {
+     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    justify-items: center;
+
 }
 
 
