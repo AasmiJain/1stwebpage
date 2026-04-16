@@ -11,6 +11,28 @@ body {
 .container {
     text-align: center;
     padding: 80px 20px;
+
+}
+.box-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+    width:48%;
+    justify-content:center;
+     
+
+}
+.box img{
+    width:300px;
+    height:200px;
+    justify-content:center;
+    text-align:center;
+    
+}
+.box{
+    text-align:center;
+    justify-content: center;
+
 }
 
 
@@ -76,10 +98,7 @@ button:hover {
     border-radius: 10px;
 }
 
-.box img{
-    width:250px;
-    height:200px;
-}
+
 
 
 
@@ -290,13 +309,6 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     justify-items: center;
-}
-.box {
-     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 35px;
-    justify-items: center;
-
 }
 
 
