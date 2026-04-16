@@ -10,63 +10,66 @@
 
     <div class="container">
 
-        <h1>🌾 Crop Information</h1>
+        <h1>Various Types of Crops</h1>
+
+        <div class="card">
+            <h3>Grains</h3>    
+       <a href="Grains.html">
+    <img src="{{ url_for('static', filename='images/grains.jpeg') }}">
+    </a>
+       </div>
 
         <div class="cards-container">
+            <h3>Pulses</h3>
+           <a href="Pulses.html">
+    <img src="{{ url_for('static', filename='images/pulses.jpg') }}">
+</a>
+             </div>
 
-            <!-- Rice -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <h3>Rice</h3>
-                        <img src="{{ url_for('static', filename='images/rice.jpg') }}">
-                    </div>
-                    <div class="flip-card-back">
-                        <p>Requires high rainfall and warm climate.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="cards-container">
+            <h3>OilSeeds</h3>      
+        <a href="OilSeeds.html">
+    <img src="{{ url_for('static', filename='images/oil.jpg') }}">
+</a>
+       </div>
 
-            <!-- Wheat -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <h3>Wheat</h3>
-                        <img src="{{ url_for('static', filename='images/Wheat.jpg') }}">
-                    </div>
-                    <div class="flip-card-back">
-                        <p>Grows best in cool climate.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="cards-container">
+            <h3>Commercial Crops</h3>        
+        <a href="CommercialCrops.html">
+    <img src="{{ url_for('static', filename='images/commercial.jpg') }}">
+</a>
+         </div>
+         
+        <div class="cards-container">
+            <h3>Fruits</h3>      
+        <a href="Fruits.html">
+    <img src="{{ url_for('static', filename='images/fruit.jpg') }}">
+</a>
+       </div>
+       
+        <div class="cards-container">
+            <h3>Vegetables</h3>      
+        <a href="Vegetables.html">
+    <img src="{{ url_for('static', filename='images/vegetable.avif') }}">
+</a>
+       </div>
 
-            <!-- Maize -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <h3>Maize</h3>
-                        <img src="{{ url_for('static', filename='images/maize.jpg') }}">
-                    </div>
-                    <div class="flip-card-back">
-                        <p>Needs warm weather and good drainage.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="cards-container">
+            <h3>Spices & Plantation Crops</h3>      
+        <a href="Spices.html">
+    <img src="{{ url_for('static', filename='images/spices.jpg') }}">
+</a>
+       </div>
+       
+        <div class="cards-container">
+            <h3>SpecialCrops</h3>      
+        <a href="SpecialCrops.html">
+    <img src="{{ url_for('static', filename='images/special.jpeg') }}">
+</a>
+       </div>
 
-            <!-- Cotton -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <h3>Cotton</h3>
-                        <img src="{{ url_for('static', filename='images/cotton.jpg') }}">
-                    </div>
-                    <div class="flip-card-back">
-                        <p>Best grown in black soil and high temperature.</p>
-                    </div>
-                </div>
-            </div>
+         
 
-        </div>
 
         <!-- 👇 EXTRA CONTENT -->
 
@@ -74,33 +77,27 @@
         <p>Weather plays a major role in crop growth. Temperature, humidity, and rainfall must be balanced.</p>
 
         <h2>📊 Crop Yield Factors</h2>
-        <ul class="point">
+        <ul class="point"> 
             <li style=text-align:center>Soil fertility</li>
-            <li style=t ext-align:center>Water availability</li>
-            <li style=t ext-align:center>Climate conditions</li>
-            <li style=t ext-align:center>Farming techniques</li>
+            <li style= text-align:center>Water availability</li>
+            <li style= text-align:center>Climate conditions</li>
+            <li style= text-align:center>Farming techniques</li>
         </ul>
 
         <h2>🚜 Modern Farming</h2>
         <p>Use of AI and technology helps farmers improve crop production and reduce loss.</p>
 
-        <h2>📌 Conclusion</h2>
-        <p>Choosing the right crop based on environment increases profit and reduces risk.</p>
+        
 
         <a href="/"><button>Back</button></a>
 
     </div>
+    <script>
+    function flipCard(card) {
+      card.classList.toggle("flipped");
+    }
+  </script>
 
 </body>
 
 </html>
-
-       
-
-    
-
-       
-     
-
-        
- 
