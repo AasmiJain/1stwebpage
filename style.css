@@ -14,17 +14,16 @@ body {
 
 }
 .box-container{
-    display:flex;
-    flex-wrap:wrap;
-    gap:25px;
-    width:48%;
-    justify-content:center;
-     
+    
+    display: grid;
+    grid-template-columns: repeat(2, 300px); /* 2 items per row */
+    justify-content: center; /* centers the whole row */
+    gap: 100px 200px;
 
 }
 .box img{
-    width:300px;
-    height:200px;
+    width:400px;
+    height:300px;
     justify-content:center;
     text-align:center;
     
@@ -32,6 +31,8 @@ body {
 .box{
     text-align:center;
     justify-content: center;
+    text-align:center;
+    font-size:20px;
 
 }
 
@@ -310,9 +311,3 @@ body {
     gap: 25px;
     justify-items: center;
 }
-
-
-
-
-
-      
