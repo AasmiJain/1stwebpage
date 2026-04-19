@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fruits</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>🍎 Fruits Information</h1>
+
+        <div class="cards-container">
+
+            <a href="#mangoModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Mango</h3>
+                        <img src="{{ url_for('static', filename='images/mango.jpg') }}">
+                    </div>
+                </div>
+            </a>
+
+            <!-- MODAL -->
+            <div id="mangoModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+
+                <div class="modal-content">
+                    <div class="modal-card">
+
+                        <!-- FRONT -->
+                        <div class="modal-front">
+                            <h2>Mango</h2>
+                            <img src="{{ url_for('static', filename='images/mango.jpg') }}">
+                        </div>
+
+                        <!-- BACK -->
+                        <div class="modal-back">
+                            <p>
+                                <b>Mango grows best in well-drained loamy soil with a pH of 5.5 to 7.5. It requires a warm climate with temperatures between 24°C and 30°C and does not tolerate frost. Moderate humidity is suitable, and the plant needs full sunlight for healthy growth.</b>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <a href="#appleModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Apple</h3>
+                        <img src="{{ url_for('static', filename='images/apple.jpg') }}">
+                    </div>
+                </div>
+            </a>
+
+            <div id="appleModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+                <div class="modal-content">
+                    <div class="modal-card">
+                        <div class="modal-front">
+                            <h2>Apple</h2>
+                            <img src="{{ url_for('static', filename='images/apple.jpg') }}">
+                        </div>
+                        <div class="modal-back">
+                            <p><b>Apple grows well in well-drained loamy soil with a pH of 6.0 to 7.0. It requires a cold climate with temperatures between 10°C and 24°C. Chilling hours are important for fruiting. The plant needs full sunlight and moderate rainfall for proper growth.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#bananaModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Banana</h3>
+                        <img src="{{ url_for('static', filename='images/banana.jpg') }}">
+                    </div>
+                </div>
+            </a>
+
+            <div id="bananaModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+                <div class="modal-content">
+                    <div class="modal-card">
+                        <div class="modal-front">
+                            <h2>Banana</h2>
+                            <img src="{{ url_for('static', filename='images/banana.jpg') }}">
+                        </div>
+                        <div class="modal-back">
+                            <p><b>Banana grows best in well-drained loamy soil rich in organic matter. It requires a warm and humid climate with temperatures between 25°C and 35°C. High humidity and regular rainfall support good growth. The plant needs full sunlight and frequent watering.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#orangeModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Orange</h3>
+                        <img src="{{ url_for('static', filename='images/orange.jpg') }}">
+                    </div>
+                </div>
+            </a>
+
+            <div id="orangeModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+                <div class="modal-content">
+                    <div class="modal-card">
+                        <div class="modal-front">
+                            <h2>Orange</h2>
+                            <img src="{{ url_for('static', filename='images/orange.jpg') }}">
+                        </div>
+                        <div class="modal-back">
+                            <p><b>Orange grows well in well-drained sandy loam soil with a pH of 5.5 to 7.5. It prefers a warm climate with temperatures between 20°C and 30°C. Moderate humidity is suitable, and the plant requires full sunlight.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#strawberryModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Strawberry</h3>
+                        <img src="{{ url_for('static', filename='images/strawberry.jpg') }}">
+                    </div>
+                </div>
+            </a>
+
+            <div id="strawberryModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+                <div class="modal-content">
+                    <div class="modal-card">
+                        <div class="modal-front">
+                            <h2>Strawberry</h2>
+                            <img src="{{ url_for('static', filename='images/strawberry.jpg') }}">
+                        </div>
+                        <div class="modal-back">
+                            <p><b>Strawberry grows best in well-drained sandy loam soil rich in organic matter. It prefers a cool climate with temperatures between 15°C and 25°C. Moderate humidity is ideal, and the plant needs full sunlight.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#papayaModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Papaya</h3>
+                        <img src="{{ url_for('static', filename='images/papaya.jpg') }}">
+                    </div>
+                </div>
+            </a>
+
+            <div id="papayaModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+                <div class="modal-content">
+                    <div class="modal-card">
+                        <div class="modal-front">
+                            <h2>Papaya</h2>
+                            <img src="{{ url_for('static', filename='images/papaya.jpg') }}">
+                        </div>
+                        <div class="modal-back">
+                            <p><b>Papaya grows well in well-drained sandy loam soil with a pH of 5.5 to 7.0. It requires a warm climate with temperatures between 25°C and 35°C. Moderate humidity is suitable.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#grapesModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Grapes</h3>
+                        <img src="{{ url_for('static', filename='images/grapes.jpg') }}">
+                    </div>
+                </div>
+            </a>
+
+            <div id="grapesModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+                <div class="modal-content">
+                    <div class="modal-card">
+                        <div class="modal-front">
+                            <h2>Grapes</h2>
+                            <img src="{{ url_for('static', filename='images/grapes.jpg') }}">
+                        </div>
+                        <div class="modal-back">
+                            <p><b>Grapes grow best in well-drained sandy loam soil with a pH of 6.5 to 7.5. They prefer a warm and dry climate with temperatures between 15°C and 35°C.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#blueberryModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Blueberry</h3>
+                        <img src="{{ url_for('static', filename='images/blueberry.jpg') }}">
+                    </div>
+                </div>
+            </a>
+
+            <div id="blueberryModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+                <div class="modal-content">
+                    <div class="modal-card">
+                        <div class="modal-front">
+                            <h2>Blueberry</h2>
+                            <img src="{{ url_for('static', filename='images/blueberry.jpg') }}">
+                        </div>
+                        <div class="modal-back">
+                            <p><b>Blueberry grows well in acidic soil with a pH of 4.5 to 5.5. It prefers a cool climate with temperatures between 10°C and 25°C.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#pineappleModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Pineapple</h3>
+                        <img src="{{ url_for('static', filename='images/pineapple.jpg') }}">
+                    </div>
+                </div>
+            </a>
+
+            <div id="pineappleModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+                <div class="modal-content">
+                    <div class="modal-card">
+                        <div class="modal-front">
+                            <h2>Pineapple</h2>
+                            <img src="{{ url_for('static', filename='images/pineapple.jpg') }}">
+                        </div>
+                        <div class="modal-back">
+                            <p><b>Pineapple grows best in well-drained sandy loam soil with a pH of 4.5 to 6.5. It prefers a warm climate with temperatures between 20°C and 30°C.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="/crop"><button>Back</button></a>
+    </div>
+
+</body>
+
+</html>
