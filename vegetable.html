@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vegetables</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>🥦 Vegetables Information</h1>
+
+        <div class="cards-container">
+
+            <a href="#potatoModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Potato</h3>
+                        <img src="{{ url_for('static', filename='images/potato.jpg') }}">
+                    </div>
+                </div>
+            </a>
+
+            <div id="potatoModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+                <div class="modal-content">
+                    <div class="modal-card">
+                        <div class="modal-front">
+                            <h2>Potato</h2>
+                            <img src="{{ url_for('static', filename='images/potato.jpg') }}">
+                        </div>
+                        <div class="modal-back">
+                            <p><b>Apple grows well in well-drained loamy soil with a pH of 6.0 to 7.0. It requires a cold climate with temperatures between 10°C and 24°C. Chilling hours are important for fruiting. The plant needs full sunlight and moderate rainfall for proper growth.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#tomatoModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Tomato</h3>
+                        <img src="{{ url_for('static', filename='images/tomato.jpeg') }}">
+                    </div>
+                </div>
+            </a>
+
+            <div id="tomatoModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+                <div class="modal-content">
+                    <div class="modal-card">
+                        <div class="modal-front">
+                            <h2>Tomato</h2>
+                            <img src="{{ url_for('static', filename='images/tomato.jpeg') }}">
+                        </div>
+                        <div class="modal-back">
+                            <p><b>Apple grows well in well-drained loamy soil with a pH of 6.0 to 7.0. It requires a cold climate with temperatures between 10°C and 24°C. Chilling hours are important for fruiting. The plant needs full sunlight and moderate rainfall for proper growth.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <a href="#onionModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Onion</h3>
+                        <img src="{{ url_for('static', filename='images/onion.jpg') }}">
+                    </div>
+                </div>
+            </a>
+
+            <div id="onionModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+                <div class="modal-content">
+                    <div class="modal-card">
+                        <div class="modal-front">
+                            <h2>Onion</h2>
+                            <img src="{{ url_for('static', filename='images/onion.jpg') }}">
+                        </div>
+                        <div class="modal-back">
+                            <p><b>Apple grows well in well-drained loamy soil with a pH of 6.0 to 7.0. It requires a cold climate with temperatures between 10°C and 24°C. Chilling hours are important for fruiting. The plant needs full sunlight and moderate rainfall for proper growth.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#carrotModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Carrot</h3>
+                        <img src="{{ url_for('static', filename='images/carrot.avif') }}">
+                    </div>
+                </div>
+            </a>
+
+            <div id="carrotModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+                <div class="modal-content">
+                    <div class="modal-card">
+                        <div class="modal-front">
+                            <h2>Carrot</h2>
+                            <img src="{{ url_for('static', filename='images/carrot.avif') }}">
+                        </div>
+                        <div class="modal-back">
+                            <p><b>Apple grows well in well-drained loamy soil with a pH of 6.0 to 7.0. It requires a cold climate with temperatures between 10°C and 24°C. Chilling hours are important for fruiting. The plant needs full sunlight and moderate rainfall for proper growth.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#greenchillyModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Green Chilly</h3>
+                        <img src="{{ url_for('static', filename='images/gchilly.jpg') }}">
+                    </div>
+                </div>
+            </a>
+
+            <div id="greenchillyModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+                <div class="modal-content">
+                    <div class="modal-card">
+                        <div class="modal-front">
+                            <h2>Green Chilly</h2>
+                            <img src="{{ url_for('static', filename='images/gchilly.jpg') }}">
+                        </div>
+                        <div class="modal-back">
+                            <p><b>Apple grows well in well-drained loamy soil with a pH of 6.0 to 7.0. It requires a cold climate with temperatures between 10°C and 24°C. Chilling hours are important for fruiting. The plant needs full sunlight and moderate rainfall for proper growth.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#garlicModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Garlic</h3>
+                        <img src="{{ url_for('static', filename='images/garlic.jpg') }}">
+                    </div>
+                </div>
+            </a>
+
+            <div id="garlicModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+                <div class="modal-content">
+                    <div class="modal-card">
+                        <div class="modal-front">
+                            <h2>Garlic</h2>
+                            <img src="{{ url_for('static', filename='images/garlic.jpg') }}">
+                        </div>
+                        <div class="modal-back">
+                            <p><b>Apple grows well in well-drained loamy soil with a pH of 6.0 to 7.0. It requires a cold climate with temperatures between 10°C and 24°C. Chilling hours are important for fruiting. The plant needs full sunlight and moderate rainfall for proper growth.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#gingerModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Ginger</h3>
+                        <img src="{{ url_for('static', filename='images/ginger.avif') }}">
+                    </div>
+                </div>
+            </a>
+
+            <div id="gingerModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+                <div class="modal-content">
+                    <div class="modal-card">
+                        <div class="modal-front">
+                            <h2>Ginger</h2>
+                            <img src="{{ url_for('static', filename='images/ginger.avif') }}">
+                        </div>
+                        <div class="modal-back">
+                            <p><b>Apple grows well in well-drained loamy soil with a pH of 6.0 to 7.0. It requires a cold climate with temperatures between 10°C and 24°C. Chilling hours are important for fruiting. The plant needs full sunlight and moderate rainfall for proper growth.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#cabbageModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Cabbage</h3>
+                        <img src="{{ url_for('static', filename='images/cabbage.jpg') }}">
+                    </div>
+                </div>
+            </a>
+
+            <div id="cabbageModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+                <div class="modal-content">
+                    <div class="modal-card">
+                        <div class="modal-front">
+                            <h2>Cabbage</h2>
+                            <img src="{{ url_for('static', filename='images/cabbage.jpg') }}">
+                        </div>
+                        <div class="modal-back">
+                            <p><b>Apple grows well in well-drained loamy soil with a pH of 6.0 to 7.0. It requires a cold climate with temperatures between 10°C and 24°C. Chilling hours are important for fruiting. The plant needs full sunlight and moderate rainfall for proper growth.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#capsicumModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Capsicum</h3>
+                        <img src="{{ url_for('static', filename='images/capsicum.jpg') }}">
+                    </div>
+                </div>
+            </a>
+
+            <div id="capsicumModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+                <div class="modal-content">
+                    <div class="modal-card">
+                        <div class="modal-front">
+                            <h2>Capsicum</h2>
+                            <img src="{{ url_for('static', filename='images/capsicum.jpg') }}">
+                        </div>
+                        <div class="modal-back">
+                            <p><b>Apple grows well in well-drained loamy soil with a pH of 6.0 to 7.0. It requires a cold climate with temperatures between 10°C and 24°C. Chilling hours are important for fruiting. The plant needs full sunlight and moderate rainfall for proper growth.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <a href="/crop"><button>Back</button></a>
+    </div>
+
+</body>
+
+</html>
