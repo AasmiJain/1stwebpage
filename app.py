@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request
+
+        from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -31,7 +32,27 @@ def vegetables():
 @app.route('/Spices')
 def spices():
     return render_template('Spices.html')
+# oilseed page 
+@app.route('/OilSeeds')
+def OilSeeds():
+    return render_template('OilSeeds.html')
+# Grains page 
+@app.route('/Grains')
+def Grains():
+    return render_template('Grains.html')
+# Pulses page 
+@app.route('/Pulses')
+def Pulses():
+    return render_template('Pulses.html')
+# CommercialCrops page 
+@app.route('/CommercialCrops')
+def CommercialCrops():
+    return render_template('CommercialCrops.html')
 
+#Special crops page
+@app.route('/SpecialCrops')
+def SpecialCrops():
+    return render_template('SpecialCrops.html')
 # Recommendation Page
 @app.route('/recommend', methods=['GET', 'POST'])
 def recommend():
@@ -60,4 +81,3 @@ def recommend():
 # Run App
 if __name__ == "__main__":
     app.run(debug=True)
-
