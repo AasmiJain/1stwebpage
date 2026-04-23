@@ -17,6 +17,21 @@ def soil():
 def crop():
     return render_template("crop.html")
 
+# Fruits Page
+@app.route('/Fruits')
+def fruits():
+    return render_template('Fruits.html')
+
+# Vegetables Page
+@app.route('/Vegetables')
+def vegetables():
+    return render_template('Vegetables.html')
+
+# Spices Page
+@app.route('/Spices')
+def spices():
+    return render_template('Spices.html')
+
 # Recommendation Page
 @app.route('/recommend', methods=['GET', 'POST'])
 def recommend():
@@ -28,7 +43,7 @@ def recommend():
         humidity = float(request.form['humidity'])
         rainfall = float(request.form['rainfall'])
 
-        # Simple Rule-Based Logic (Easy + Works Perfect)
+        # Simple Rule-Based Logic
         if soil == 0 and rainfall > 200:
             result = "Rice"
         elif soil == 1 and temp > 25:
@@ -43,5 +58,6 @@ def recommend():
     return render_template("recommend.html", result=result)
 
 # Run App
-if __name__ == "__main__":  
+if __name__ == "__main__":
     app.run(debug=True)
+
