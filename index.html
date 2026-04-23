@@ -3,16 +3,17 @@
 
 <head>
     <title>Soil2Seed</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
 
     <div class="container">
+        <div class="section">
 
         <h1>🌾 Soil2Seed</h1>
         <p>An AI-Based Crop Recommendation System for Farmers</p>
-
+</div>
         <div class="nav">
             <a href="/soil"><button>Soil Information</button></a>
             <a href="/crop"><button>Crop Information</button></a>
@@ -20,26 +21,34 @@
         </div>
 
         <!-- 👇 EXTRA INFORMATION START -->
+         <div class="section">
 
         <h2>📌 About This Project</h2>
         <p>
             This website is designed to help farmers make better decisions by using Artificial Intelligence. It analyzes soil nutrients, weather conditions, and environmental factors to recommend the most suitable crop.
         </p>
+        </div>
+        <div class="section">
 
         <h2>🤖 How This System Works</h2>
         <p>
             The system uses a Machine Learning model trained on agricultural data. Users enter soil and weather details, and the system predicts the best crop for maximum yield.
         </p>
+        </div>
+        <div class="section">
 
         <h2>🌱 Why This System is Important</h2>
+        </div>
         <ul class="point">
             <li>Helps farmers choose the right crop</li>
             <li>Improves crop production</li>
             <li>Reduces farming risks</li>
             <li>Saves time and effort</li>
         </ul>
+        <div class="section">
 
         <h2>📊 Features of the System</h2>
+        </div>
         <ul class="point">
             <li>Soil type and nutrient analysis</li>
             <li>Weather-based prediction</li>
