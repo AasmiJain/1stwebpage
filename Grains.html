@@ -1,1 +1,231 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <title>Grains</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Grains Information</h1>
+
+        <div class="cards-container">
+
+            <a href="#wheatModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Wheat</h3>
+                        <img src="{{ url_for('static', filename='images/wheat.jpg') }}">
+                    </div>
+                </div>
+            </a>
+
+            <!-- MODAL -->
+            <div id="wheatModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+
+                <div class="modal-content">
+                    <div class="modal-card">
+
+                        <!-- FRONT -->
+                        <div class="modal-back">
+                            <h2>Wheat</h2>
+                            <img src="{{ url_for('static', filename='images/wheat.jpg') }}">
+                        
+                            <p>
+                                <b>Pigeon pea grows well in well-drained loamy soil with a pH of 6.5 to 7.5. It prefers a warm climate with temperatures between 26°C and 30°C. The crop is drought-tolerant and requires moderate rainfall.</b>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <a href="#riceModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Rice</h3>
+                        <img src="{{ url_for('static', filename='images/rice.jpg') }}">
+                    </div>
+                </div>
+            </a>
+
+            <div id="riceModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+                <div class="modal-content">
+                    <div class="modal-card">
+                        <div class="modal-back">
+                            <h2>Rice</h2>
+                            <img src="{{ url_for('static', filename='images/rice.jpg') }}">
+                        
+                    
+                            <p><b>Red lentil grows well in loamy soil with good drainage and a pH of 6.0 to 7.5. It prefers a cool climate with temperatures between 18°C and 25°C. Low to moderate rainfall and bright sunlight are ideal.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#maizeModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Maize/corn</h3>
+                        <img src="{{ url_for('static', filename='images/maize.jpg') }}">
+                    </div>
+                </div>
+            </a>
+
+            <div id="maizeModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+                <div class="modal-content">
+                    <div class="modal-card">
+                        <div class="modal-back">
+                            <h2>Maize</h2>
+                            <img src="{{ url_for('static', filename='images/maize.jpg') }}">
+                       
+                            <p><b>Green gram grows best in well-drained sandy loam soil with a pH of 6.0 to 7.0. It thrives in warm climates with temperatures between 25°C and 35°C. The crop requires moderate rainfall and full sunlight for good yield.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#oatsModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Oats</h3>
+                        <img src="{{ url_for('static', filename='images/oats.jpg') }}">
+                    </div>
+                </div>
+            </a>
+
+            <div id="oatsModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+                <div class="modal-content">
+                    <div class="modal-card">
+                        <div class="modal-back">
+                            <h2>Oats</h2>
+                            <img src="{{ url_for('static', filename='images/oats.jpg') }}">
+                        
+                            <p><b>Moth bean grows well in sandy to loamy soils with good drainage and a pH of 6.0 to 7.5. It thrives in hot and dry climates with temperatures between 25°C and 35°C. The crop is highly drought-tolerant and requires low rainfall. It needs full sunlight for healthy growth.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#barleyModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Barley</h3>
+                        <img src="{{ url_for('static', filename='images/barley.jpg') }}">
+                    </div>
+                </div>
+            </a>
+
+            <div id="barleyModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+                <div class="modal-content">
+                    <div class="modal-card">
+                        <div class="modal-back">
+                            <h2>Barley</h2>
+                            <img src="{{ url_for('static', filename='images/barley.jpg') }}">
+                       
+                            <p><b>Black gram grows best in fertile, well-drained loamy soil with a pH of 6.5 to 7.5. It requires a warm climate with temperatures between 25°C and 35°C and moderate rainfall. The crop needs full sunlight.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#jowarModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Sorghum/Jowar</h3>
+                        <img src="{{ url_for('static', filename='images/jowar.png') }}">
+                    </div>
+                </div>
+            </a>
+
+            <div id="jowarModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+                <div class="modal-content">
+                    <div class="modal-card">
+                        <div class="modal-back">
+                            <h2>Jowar</h2>
+                            <img src="{{ url_for('static', filename='images/jowar.png') }}">
+                       
+                            <p><b>Chickpea grows well in well-drained sandy loam to loamy soil with a pH of 6.0 to 7.5. It prefers a cool and dry climate with temperatures between 20°C and 25°C. The crop requires moderate rainfall and plenty of sunlight.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#bajraModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Pearl/bajra</h3>
+                        <img src="{{ url_for('static', filename='images/bajra.avif') }}">
+                    </div>
+                </div>
+            </a>
+
+            <div id="bajraModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+                <div class="modal-content">
+                    <div class="modal-card">
+                        <div class="modal-back">
+                            <h2>Bajra</h2>
+                            <img src="{{ url_for('static', filename='images/bajra.avif') }}">
+                        
+                            <p><b>Lobia grows well in well-drained sandy loam to loamy soil with a pH of 5.5 to 7.5. It prefers a warm climate with temperatures between 20°C and 30°C. The crop is drought-tolerant, requires low to moderate rainfall, and grows best in full sunlight.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#quinoaModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Quinoa</h3>
+                        <img src="{{ url_for('static', filename='images/quinoa.png') }}">
+                    </div>
+                </div>
+            </a>
+
+            <div id="quinoaModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+                <div class="modal-content">
+                    <div class="modal-card">
+                        <div class="modal-back">
+                            <h2>Quinoa</h2>
+                            <img src="{{ url_for('static', filename='images/quinoa.png') }}">
+                        
+                            <p><b>Field pea grows well in fertile, well-drained soil with a pH of 6.0 to 7.5. It thrives in cool climates with temperatures between 10°C and 25°C. The crop requires moderate moisture and sunlight.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#kuttuModal">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>BuckWheat/Kuttu</h3>
+                        <img src="{{ url_for('static', filename='images/kuttu.jpg') }}">
+                    </div>
+                </div>
+            </a>
+
+            <div id="kuttuModal" class="modal">
+                <a href="#" class="close-btn">×</a>
+                <div class="modal-content">
+                    <div class="modal-card">
+                        <div class="modal-back">
+                            <h2>Kuttu</h2>
+                            <img src="{{ url_for('static', filename='images/kuttu.jpg') }}">
+                        
+                            <p><b>Rajma grows best in well-drained loamy soil with a pH of 6.0 to 7.0. It prefers a cool to moderate climate with temperatures between 15°C and 25°C. The crop requires moderate rainfall and cannot tolerate waterlogging. Full sunlight is ideal for healthy growth and good yield.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="/crop"><button>Back</button></a>
+    </div>
+
+</body>
+
+</html>
